@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5fa;
+  color: #333;
+  text-align: center;
+}
+
+header,
+.login-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header styling */
+/* Modern Header Styling */
+header {
+  background: rgba(20, 20, 20, 0.85); /* Sleek dark shade */
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  box-shadow: 0 6px 20px rgba(243, 174, 174, 0.766);
+  border-bottom: 1px solid rgba(18, 17, 17, 0.804);
+  transition: background 0.4s ease;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff4d4d;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  padding: 4px 0;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #ff4d4d;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4d4d;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.auth-buttons a,
+.auth-buttons button {
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-buttons button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 60px 20px;
+}
+
+main h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 16px;
+  color: #555;
+}
+
+main span {
+  color: #888;
+}
+
+.upload-area {
+  margin-top: 40px;
+}
+
+.upload-button {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  padding: 16px 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#file-upload {
+  display: none;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+}
